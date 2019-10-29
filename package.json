@@ -4,6 +4,8 @@
   "description": "Mars Rover problem, solved in JavaScript.",
   "main": "index.js",
   "scripts": {
+    "build": "babel -d dist/ src",
+    "start": "node dist/index.js",
     "test": "jest"
   },
   "repository": {
@@ -17,8 +19,10 @@
   },
   "homepage": "https://github.com/brennan-pilcher/JS-Mars-Rover#readme",
   "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.0.0",
     "@babel/preset-env": "^7.6.3",
-    "babel-jest": "^24.9.0",
+    "babel-core": "7.0.0-bridge.0",
     "jest": "^24.9.0"
   },
   "jest": {
