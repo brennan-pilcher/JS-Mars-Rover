@@ -1,0 +1,19 @@
+{
+  "name": "mars_rover",
+  "version": "0.0.1",
+  "description": "Mars Rover problem, solved in JavaScript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brennan-pilcher/JS-Mars-Rover.git"
+  },
+  "author": "Brennan Pilcher",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brennan-pilcher/JS-Mars-Rover/issues"
+  },
+  "homepage": "https://github.com/brennan-pilcher/JS-Mars-Rover#readme"
+}
