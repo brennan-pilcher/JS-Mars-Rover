@@ -4,7 +4,7 @@
   "description": "Mars Rover problem, solved in JavaScript.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,15 @@
   "bugs": {
     "url": "https://github.com/brennan-pilcher/JS-Mars-Rover/issues"
   },
-  "homepage": "https://github.com/brennan-pilcher/JS-Mars-Rover#readme"
+  "homepage": "https://github.com/brennan-pilcher/JS-Mars-Rover#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.6.3",
+    "babel-jest": "^24.9.0",
+    "jest": "^24.9.0"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    }
+  }
 }
