@@ -10,7 +10,13 @@ const IO = {
     if ((/^\d+\s\d+\s[NESW]\n[LRM]+$/).test(input)) {
       const coordinates = input.match(/\d+/g);
       const direction = input.match(/[NESW]/g);
-      return { direction: direction[0], x: parseInt(coordinates[0]), y: parseInt(coordinates[1]) };
+      const commands = input.match(/[LRM]+/g);
+      return {
+        commands: commands[0],
+        direction: direction[0],
+        x: parseInt(coordinates[0]),
+        y: parseInt(coordinates[1])
+      };
     }
     else {
       throw Error(`Unable to parse input: "${input}"`);

@@ -11,7 +11,7 @@ describe('IO module', () => {
   it('should parse initial coordinates and direction from the input', () => {
     const parsedInput = IO.parseInitialStateFromInput('1 2 N\nMLMRML');
 
-    expect(parsedInput).toEqual({ direction: 'N', x: 1, y: 2 });
+    expect(parsedInput).toEqual({ commands: 'MLMRML', direction: 'N', x: 1, y: 2 });
   });
 
   it('should throw an error when parsing if the input is invalid', () => {
