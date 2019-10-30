@@ -1,1 +1,2 @@
-this is some test data
+1 2 N
+MLMRML
