@@ -12,6 +12,19 @@ describe('IO module', () => {
     const parsedInput = IO.parseCoordinatesFromInput('1 2 N\nMLMRML');
 
     expect(parsedInput).toEqual({ x: 1, y: 2 });
-  })
+  });
+
+
+  it('should throw an error when parsing if the input is invalid', () => {
+    const invalidInput1 = (input) => {IO.parseCoordinatesFromInput('1 2 X\nMLMRML')}
+    const invalidInput2 = (input) => {IO.parseCoordinatesFromInput('1 2 2\nMLMRML')}
+    const invalidInput3 = (input) => {IO.parseCoordinatesFromInput('1 2\nMLMRML')}
+    const invalidInput4 = (input) => {IO.parseCoordinatesFromInput('1 2 N\nWWWW')}
+
+    expect(invalidInput1).toThrow(Error('Unable to parse input: "1 2 X\nMLMRML"'));
+    expect(invalidInput2).toThrow(Error('Unable to parse input: "1 2 2\nMLMRML"'));
+    expect(invalidInput3).toThrow(Error('Unable to parse input: "1 2\nMLMRML"'));
+    expect(invalidInput4).toThrow(Error('Unable to parse input: "1 2 N\nWWWW"'));
+  });
 
 });

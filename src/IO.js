@@ -11,6 +11,9 @@ const IO = {
       const coordinates = input.match(/\d+/g);
       return { x: parseInt(coordinates[0]), y: parseInt(coordinates[1]) };
     }
+    else {
+      throw Error(`Unable to parse input: "${input}"`);
+    }
   }
 }
 
