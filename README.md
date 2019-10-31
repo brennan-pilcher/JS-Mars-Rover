@@ -1,5 +1,7 @@
 ***Note:*** *I originally made this repo private, but after [a quick Google search](https://www.google.com/search?q=mars+rover+interview+problem) I realized that this problem has been publicly available on the internet for close to a decade.*
 
+___
+
 # Mars Rover
 
 A squad of robotic rovers are to be landed by NASA on a plateau on Mars.
@@ -24,6 +26,7 @@ Each rover will be finished sequentially, which means that the second rover wonâ
 ### OUTPUT:
 The output for each rover should be its final coordinates and heading.
 
+___
 
 ### Test Input:
 
