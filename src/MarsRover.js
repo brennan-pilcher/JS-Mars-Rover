@@ -23,7 +23,6 @@ class MarsRover {
     return [this.x, this.y];
   }
 
-
 };
 
 export default MarsRover;
