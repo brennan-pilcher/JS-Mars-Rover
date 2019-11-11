@@ -14,17 +14,27 @@ export const firstRoverInput =
 MLRMRMR`;
 
 export const secondRoverInput = 
+`3 4 E
+MRMRMR`;
+
+export const thirdRoverInput = 
 `2 3 W
 MRLLRLM`;
 
 export const invalidInputs =
 [
-`1 2 X
+`5 5
+1 2 X
 MLMRML`,
-`1 2 2
+`5 5
+1 2 2
 MLMRML`,
-`1 2
+`5 5
+1 2
 MLMRML`,
+`5 5
+1 2 N
+WWWW`,
 `1 2 N
-WWWW`
+MLMRM`
 ];
