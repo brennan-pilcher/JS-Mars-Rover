@@ -23,4 +23,34 @@ describe('Mars Rover', () => {
     expect(rover.getCommands()).toEqual('LMRMLLM');
   });
 
+  describe('should evaluate a walk command', () => {
+    it('when facing north', () => {
+      rover = new MarsRover('LMRMLLM', 'N', 1, 1);
+      rover.executeCommand('W');
+      
+      expect(rover.getPosition()).toEqual([1,2]);
+    });
+
+    it('when facing south', () => {
+      rover = new MarsRover('LMRMLLM', 'S', 1, 1);
+      rover.executeCommand('W');
+      
+      expect(rover.getPosition()).toEqual([1,0]);
+    });
+
+    it('when facing west', () => {
+      rover = new MarsRover('LMRMLLM', 'W', 1, 1);
+      rover.executeCommand('W');
+      
+      expect(rover.getPosition()).toEqual([0,1]);
+    });
+
+    it('when facing east', () => {
+      rover = new MarsRover('LMRMLLM', 'E', 1, 1);
+      rover.executeCommand('W');
+      
+      expect(rover.getPosition()).toEqual([2,1]);
+    });
+  });
+
 });

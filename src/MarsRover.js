@@ -11,6 +11,15 @@ class MarsRover {
     return "Beep Boop, I am the Mars Rover!";
   }
 
+  executeCommand (command) {
+    if (command == 'W') {
+      if (this.direction == 'N') this.y += 1;
+      else if (this.direction == 'E') this.x += 1;
+      else if (this.direction == 'S') this.y -= 1;
+      else if (this.direction == 'W') this.x -= 1;
+    }
+  }
+
   getCommands () {
     return this.commands;
   }
